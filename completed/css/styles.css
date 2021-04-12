@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'Amaranth';
+    src: url('/css/fonts/Amaranth-Bold.ttf') format('ttf'),
+         url('/css/fonts/Amaranth-Regular.ttf') format('ttf'),
+         url('/css/fonts/Amaranth-Italic.ttf') format('ttf'),
+         url('/css/fonts/Amaranth-BoldItalic.ttf') format('ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 320px;
+}
+
+.text-orange {
+    color: #F58515;
+}
+
+.text-purple {
+    color: #5448A5;
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+.container {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ 
+/* Navigation */
+.site-branding-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.site-branding-link img {
+    padding-right: 10px;
+    width: 20%;
+}
+
+.site-branding-link span {
+    font-family: 'Amaranth';
+    font-size: 16px;
+}
+
+.nav-area {
+    background-color: #5448A5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 8px;
+    z-index: 100;
+}
+
+.nav-area div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-area nav ul {
+    display: none;
+}
+
+.nav-area nav ul li a {
+    text-decoration: none;
+    padding-right: 18px;
+    color: inherit;
+    font-family: 'Amaranth';
+}
+
+.nav-area .menu-btn {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding-right: 18px;
+    /* flex-direction: column; */
+} 
+
+.nav-area nav ul.show-menu {
+    display: block;
+    list-style: none;
+    background-color: #5448A5;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 61px;
+    z-index: 100;
+}
+
+.nav-area nav ul.show-menu li a {
+    text-decoration: none;
+    display: block;
+    padding-bottom: 18px;
+    color: inherit;
+    font-family: 'Amaranth';
+    font-size: 24px;
+}
+/* End Navigation */
+
+/* Site Content */
+.site-content {
+    margin-top: 61px;
+}
+
+/* Home page header */
+.home-page-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60vh;
+    background: #F7FBFE url('/images/adorable-blur-breed-close-up-406014.jpg') no-repeat center;
+    background-size: 100% 50%;
+    background-attachment: fixed;
+}
+.home-page-header .home-page-header-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-header .home-page-header-content h1 {
+    font-family: 'Amaranth';
+    text-align: center;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.home-page-header .home-page-header-content p {
+    font-family: 'Amaranth';
+    font-size: 16px;
+    margin-top: 30px;
+}
+/* End Home page header */
+
+/* Services area */
+.services {
+    text-align: center;
+    display: block;
+    background: #CAD9F6 url('/images/services_bg.jpg') no-repeat center center/cover;
+}
+
+.services h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Amaranth';
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.services .services-content {
+    display: block;
+}
+
+.services .services-content .pet-sitting, 
+.services .services-content .dog-walking {
+    display: block;
+    position: relative;
+}
+.services .services-content .pet-sitting h3,
+.services .services-content .dog-walking h3 {
+    font-family: 'Amaranth';
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.services .services-content .pet-sitting div p,
+.services .services-content .dog-walking div p {
+    padding-bottom: 16px;
+}
+
+.services .services-content .pet-sitting img { 
+    width: 50%;
+}
+
+.services .services-content .dog-walking img { 
+    width: 50%; 
+}
+
+.services .services-content .service-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .services-content .service-info div {
+    padding-bottom: 20px;
+}
+
+.services .services-content .service-info div h3 {
+    font-family: 'Amaranth';
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+/* End Services area */
+
+/* Policies */
+
+.policies {
+    position: relative;
+    text-align: center;
+    display: block;
+    background: #CAD9F6 url('/images/orange-tabby-cat-beside-fawn-short-coated-puppy-46024.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.policies h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Amaranth';
+    font-weight: normal;
+    font-size: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.policies > p {
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.policies .policies-content {
+    z-index: 1;
+    display: block;
+    position: relative;
+}
+
+.policies .policies-content .weekend-visits h3,
+.policies .policies-content .cancellation h3,
+.policies .policies-content .payments h3 {
+    font-family: 'Amaranth';
+    font-size: 30px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+.policies .policies-content .weekend-visits div p,
+.policies .policies-content .cancellation div p,
+.policies .policies-content .payments div p {
+    padding-bottom: 60px;
+}
+
+.policies .policies-content .weekend-visits div p span,
+.policies .policies-content .cancellation div p span,
+.policies .policies-content .payments div p span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.policies .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .6;
+    position: absolute;
+    top: 0;
+}
+
+/* End Policies */
+
+/* Newsletter */
+
+.newsletter {
+    position: relative;
+    text-align: center;
+    display: block;
+    background: #CAD9F6 url('/images/services_bg.jpg') no-repeat center center/cover;
+}
+
+.newsletter h2 {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-family: 'Amaranth';
+    font-weight: normal;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.newsletter .newsletter-content {
+    display: block;
+    z-index: 1;
+}
+
+.newsletter .newsletter-content p {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding-bottom: 40px;
+}
+
+.newsletter .newsletter-content .newsletter-form {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.newsletter .newsletter-content input[type=text] {
+    padding: 10px;
+    border: 1px solid #5448A5;
+}
+
+.newsletter .newsletter-content button {
+    padding: 10px;
+    background-color: #5448A5;
+    color: #ffffff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+.newsletter .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #F58515;;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+} 
+/* End Newsletter */
+
+/* Footer */
+
+.stay-in-touch {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stay-in-touch h3 {
+    font-family: 'Amaranth';
+    font-weight: normal;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.stay-in-touch .social-icons i{
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.stay-in-touch a {
+    text-decoration: none;
+    color: #5448A5;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.stay-in-touch p {
+    color: #5448A5;
+    font-size: 20px;
+}
+/* End Footer */
+
+
+/* Media queries */
+
+ @media screen and (min-width: 600px) {
+    .site-branding-link span {
+        font-size: 20px;
+    }
+
+    .nav-area {
+        width: 100%;
+    }
+
+    .nav-area nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .nav-area .menu-btn {
+        display: none;
+    }
+
+    .site-content {
+        margin-top: 50px;
+    }
+
+    .home-page-header .home-page-header-content h1 {
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    .services .services-content .pet-sitting img { 
+        width: 60%; 
+    }
+    
+    .services .services-content .dog-walking img { 
+        width: 60%; 
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .home-page-header {
+        height: 100vh;
+        background-size: auto;
+    }
+
+    .home-page-header .home-page-header-content h1 {
+        font-size: 60px;
+    }
+
+    .services {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background: #CAD9F6 url('/images/services_bg.jpg') no-repeat center center/cover;
+    }
+
+    .services h2 {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-family: 'Amaranth';
+        font-weight: normal;
+        font-size: 60px;
+    }
+
+    .services .services-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .services .services-content .pet-sitting, 
+    .services .services-content .dog-walking {
+        display: flex;
+        flex-direction: column;
+        position: relative
+    }
+
+    .services .services-content .pet-sitting img { 
+        width: 100%; 
+        position: absolute;
+        top: 140px;
+    }
+
+    .services .services-content .dog-walking img { 
+        width: 100%; 
+        position: absolute;
+        top: 320px;
+    }
+
+    .policies {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .policies h2 {
+        position: static;
+        font-size: 60px;
+    }
+
+    .policies > p {
+        position: static;
+        width: 50%;
+    }
+
+    .policies .policies-content {
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        position: static;
+    }
+
+    .policies .policies-content .weekend-visits div p,
+    .policies .policies-content .cancellation div p,
+    .policies .policies-content .payments div p {
+        padding-bottom: 20px;
+    }
+
+    .policies .overlay {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .newsletter {
+        position: relative;
+        text-align: center;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter h2 {
+        position: static;
+        font-size: 60px;
+        z-index: 1;
+    }
+
+    .newsletter .newsletter-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .newsletter .newsletter-content p {
+        position: static;
+        width: 50%;
+        z-index: 1;
+        padding-bottom: 40px;
+    }
+
+    .newsletter .newsletter-content .newsletter-form {
+        position: static;
+        display: flex;
+    }
+
+    .newsletter .overlay {
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .services .services-content .pet-sitting img { 
+        top: 80px;
+    }
+
+    .services .services-content .dog-walking img { 
+        top: 260px;
+    }
+} 
+/* End Media queries */
